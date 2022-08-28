@@ -1,0 +1,118 @@
+:root{
+--Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+--Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+--Grayish-Blue: hsl(212, 23%, 69%);
+--Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 60%;
+    height: 55%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.imageContainer{
+    width: 400px;
+    height: 100%;
+}
+.drawers{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px  ;
+}
+.contentContainer{
+    padding: 50px;
+    width: calc(100% - 400px);
+}
+.title{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--Very-Dark-Grayish-Blue);
+    margin-bottom: 10px;
+}
+.context{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--Desaturated-Dark-Blue);
+    margin-bottom: 10px;
+}
+.Michelle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.details{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.avatar>img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.name{
+    text-align: start;
+    padding-top: 6px;
+}
+.michelleName{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--Very-Dark-Grayish-Blue);
+    margin-bottom: 5px;
+}
+.date{
+    color: var(--Grayish-Blue);
+}
+.share{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--Light-Grayish-Blue);
+    margin-top: 15px;
+    position: relative;
+}
+.shareClick{
+    position: absolute;
+    width: 220px;
+    height: 50px;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--Grayish-Blue);
+    letter-spacing: 3px;
+    top: -80px;
+    display: none;
+}
+.shareClick::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height:0;
+    border: 10px solid  ;
+    border-color: var(--Very-Dark-Grayish-Blue)  transparent transparent transparent;
+    bottom: -20px  ;
+}
